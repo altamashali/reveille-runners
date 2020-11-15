@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style-story.css">
+</head>
+<body>
+    <img src="../images/main.jpg">
+    <p id="dialogue-box">Congratulations you have found all of the rings! Play again?</p>
+    <div id="options">
+        <button id="option-1" type="button">Yes</button>    
+        <button id="option-2" type="button">No</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            window.location.href = "./wehner/start-1.html";
+        }
+        document.getElementById("option-2").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "Thanks for playing!";
+        }
+    </script>
+</body>
+</html>

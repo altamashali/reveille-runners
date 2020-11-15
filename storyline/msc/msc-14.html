@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/msc/14.JPG">
+    <p id="dialogue-box">The bird's presence is intimidating, however, it says it can expedite your journey in exchange for your dog biscuits. What do you do?</p>
+    <div id="options">
+        <button id="option-1" type="button">Promptly comply and hand over your dog biscuits.</button>    
+        <button id="option-2" type="button">Stand your ground and negotiate the offer.</button>    
+        <button id="option-3" type="button">You recognize the bird as a threat. Retreat back to base.</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+          
+            document.getElementById("dialogue-box").innerHTML = "The bird flies away upon receipt of your payment. You're failure to recognize the threat has left you on the verge of starvation. Please try again.";
+            document.getElementById("option-1").style.textDecoration = "line-through";
+            setTimeout(() => {  window.location.href = "./msc-1.html"; }, 4000);
+        }
+        document.getElementById("option-2").onclick = function() {
+            
+            window.location.href = "./msc-4.html";
+        }
+        document.getElementById("option-3").onclick = function() {
+
+            window.location.href = "./msc-1.html";
+        }
+    </script>
+</body>
+</html>

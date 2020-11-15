@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/kyle/2.JPG">
+    <p id="dialogue-box">While walking to the entrance, you see a yell leader. Do you approach him?</p>
+    <div id="options">
+        <button id="option-1" type="button">Walk up to the yell leader.</button>    
+        <button id="option-2" type="button">He looks busy, keep walking to the entrance.</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "So much fun seeing the yell leader! But now everyone wants a picture with the two of you. Maybe you shouldn't have stopped to say hi. Please Restart.";
+            document.getElementById("option-1").style.textDecoration = "line-through";
+            setTimeout(() => {  window.location.href = "./kyle-1.html"; }, 4000);
+        }
+        document.getElementById("option-2").onclick = function() {
+            window.location.href = "./kyle-4.html";
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/main.jpg">
+    <p id="dialogue-box">The campus is deserted. Where would like to continue looking?</p>
+    <div id="options">
+        <button id="option-1" type="button">Engineering Quad</button>    
+        <button id="option-2" type="button">Rudder Tower</button>    
+        <button id="option-3" type="button">Golf Courses</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "Sorry. That is not a valid option.";
+            document.getElementById("option-1").style.textDecoration = "line-through";
+
+        }        
+        document.getElementById("option-2").onclick = function() {
+            window.location.href = "./rudder-1.html";
+        }
+        document.getElementById("option-3").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "Sorry. That is not a valid option. Try again.";
+            document.getElementById("option-3").style.textDecoration = "line-through";
+        }
+    </script>
+</body>
+</html>

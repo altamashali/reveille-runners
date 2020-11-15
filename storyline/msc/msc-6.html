@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/msc/6.JPG">
+    <p id="dialogue-box">You find yourself in a huge, brightly lit hallway. There is a large stairway in front of you - one leading upstairs and one leading to the basement.</p>
+    <div id="options">
+        <button id="option-1" type="button">Go up the stairs.</button>    
+        <button id="option-2" type="button">Go downstairs.</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            window.location.href = "./msc-7.html";
+        }
+        document.getElementById("option-2").onclick = function() {
+            window.location.href = "./msc-8.html";
+        }
+    </script>
+</body>
+</html>

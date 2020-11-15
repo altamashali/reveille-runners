@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/kyle/4.JPG">
+    <p id="dialogue-box">Now that you're inside Kyle Field, where do you want to go?</p>
+    <div id="options">
+        <button id="option-1" type="button">Hall of Champions</button>    
+        <button id="option-2" type="button">First Deck</button>    
+        <button id="option-3" type="button">Third Deck</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            window.location.href = "./kyle-6.html";
+        }
+        document.getElementById("option-2").onclick = function() {
+            window.location.href = "./kyle-7.html";
+        }
+        document.getElementById("option-3").onclick = function() {
+            window.location.href = "./kyle-8.html";
+        }
+    </script>
+</body>
+</html>

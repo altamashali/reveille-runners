@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/rudder/2.JPG">
+    <p id="dialogue-box">The aggie is crossing the street. A squirrel is blocking you. What do you do?</p>
+    <div id="options">
+        <button id="option-1" type="button">Go back to the park</button>    
+        <button id="option-2" type="button">Wait for the squirrel to pass by</button>    
+        <button id="option-3" type="button">Bark at the squirrel</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "You have successfully avoided all threats. You spend the night in Spencer Park. You do not find the Aggie ring.Try again.";
+            document.getElementById("option-1").style.textDecoration = "line-through";
+            setTimeout(() => { window.location.href = "./rudder-1.html"; }, 4000);
+
+        }
+        document.getElementById("option-2").onclick = function() {
+            window.location.href = "./rudder-4.html";
+        }
+        document.getElementById("option-3").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "You realize that the squirrels have many friends who start to chase you and you get lost. Restart.";
+            document.getElementById("option-3").style.textDecoration = "line-through";
+            setTimeout(() => { window.location.href = "./rudder-1.html"; }, 4000);        
+        }
+    </script>
+</body>
+</html>

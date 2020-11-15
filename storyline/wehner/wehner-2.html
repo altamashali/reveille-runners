@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/wehner/2.JPG">
+    <p id="dialogue-box">The train has roared by. You may now cross. You encounter a construction scene with faults in the ground. What do you do?</p>
+    <div id="options">
+        <button id="option-1" type="button">Sidestep the scene and race to Wehner building.</button>    
+        <button id="option-2" type="button">Fill the potholes and swiftly cross over the construction scene.</button>    
+        <button id="option-3" type="button">Head back to the tracks and find another route.</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "It was a great risk you took. But one that wasn't worth it. You were sucked into a pothole. Please try again.";
+            document.getElementById("option-1").style.textDecoration = "line-through";
+            setTimeout(() => {  window.location.href = "./wehner-1.html"; }, 4000);
+        }
+        document.getElementById("option-2").onclick = function() {
+            window.location.href = "./wehner-5.html";
+        }
+        document.getElementById("option-3").onclick = function() {
+            window.location.href = "./wehner-1.html";
+        }
+    </script>
+</body>
+</html>

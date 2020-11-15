@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/msc/9.JPG">
+    <p id="dialogue-box">You slowly walk up to the student and see them staring blankly at the screen, mouthing something to themselves. You look at the screen and see a figure twitching to the left and right over and over. You wonder how long they've been here, and you are certain they don't have a ring.</p>
+    <div id="options">
+        <button id="option-1" type="button">Creepy. Leave now.</button>    
+        <button id="option-2" type="button">Bark at the student.</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            window.location.href = "./msc-6.html";
+        }
+        document.getElementById("option-2").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "You startle the student, who looks at you, looks back at the screen, and resumes their obesssive practice. Please try again.";
+            document.getElementById("option-2").style.textDecoration = "line-through";
+            setTimeout(() => {  window.location.href = "./msc-8.html"; }, 4000);      
+        }
+    </script>
+</body>
+</html>

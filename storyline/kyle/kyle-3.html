@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/kyle/3.JPG">
+    <p id="dialogue-box">Walking by the 12th man statue, there is a student passing out twelth man towels. Do you take one?</p>
+    <div id="options">
+        <button id="option-1" type="button">Yes! You gotta have your 12th man towel</button>    
+        <button id="option-2" type="button">No, you already have enough of them at home</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            window.location.href = "./kyle-5.html";
+        }
+        document.getElementById("option-2").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "You skip the towel and head into Kyle Field where you encounter bats. Without a towel you have nothing to fend them off with and get bitten. Please Restart.";
+            document.getElementById("option-2").style.textDecoration = "line-through";
+            setTimeout(() => {  window.location.href = "./kyle-1.html"; }, 4000);
+        }
+    </script>
+</body>
+</html>

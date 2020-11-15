@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/rudder/3.JPG">
+    <p id="dialogue-box">The squirrel takes you to a tree where there are more squirrels. What do you do?</p>
+    <div id="options">
+        <button id="option-1" type="button">Realize that the squirrels will chase you back and go the other way.</button>    
+        <button id="option-2" type="button">Steal their food and run away.</button>    
+        <button id="option-3" type="button">Continure to play with the squirrels.</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "You have successfully avoided all threats. You spend the night in Spencer Park. You do not find the Aggie ring. Try again.";
+            document.getElementById("option-1").style.textDecoration = "line-through";
+            setTimeout(() => { window.location.href = "./rudder-1.html"; }, 4000);
+        }
+        document.getElementById("option-2").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "You realize that the squirrels have many friends who start to chase you and you get lost. Restart.";
+            document.getElementById("option-2").style.textDecoration = "line-through";
+            setTimeout(() => { window.location.href = "./rudder-1.html"; }, 4000);
+        }
+        document.getElementById("option-3").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "It gets late and you sleep at the park. Start your adventures again, in the morning!";
+            document.getElementById("option-3").style.textDecoration = "line-through";
+            setTimeout(() => { window.location.href = "./rudder-1.html"; }, 4000);
+        }
+    </script>
+</body>
+</html>

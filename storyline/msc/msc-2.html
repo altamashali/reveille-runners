@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/msc/2.JPG">
+    <p id="dialogue-box">You move to pass the student, but he runs up to get a picture with you. He crouches down with his phone out.</p>
+    <div id="options">
+        <button id="option-1" type="button">Bite him mid-picture to ensure meme status.</button>    
+        <button id="option-2" type="button">Walk past the student to reach the MSC.</button>    
+        <button id="option-3" type="button">Sit patiently, then continue to the MSC.</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            
+            document.getElementById("dialogue-box").innerHTML = "The student tastes bad, and there's no way his selfie is flattering. Please restart.";
+            document.getElementById("option-1").style.textDecoration = "line-through";
+            setTimeout(() => {  window.location.href = "./msc-1.html"; }, 4000);
+        }
+        document.getElementById("option-2").onclick = function() {
+            
+            window.location.href = "./msc-6.html";
+        }
+        document.getElementById("option-3").onclick = function() {
+
+            window.location.href = "./msc-6.html";
+        }
+    </script>
+</body>
+</html>

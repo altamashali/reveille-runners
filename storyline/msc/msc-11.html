@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/msc/11.JPG">
+    <p id="dialogue-box">The room is a maze of tables, chairs, tables, and half-designed trifolds. The hum is louder now, and looking to your left, you see something glowing.</p>
+    <div id="options">
+        <button id="option-1" type="button">Go toward the light.</button>    
+        <button id="option-2" type="button">Turn right.</button>    
+        <button id="option-3" type="button">Creepy. Leave the SPO.</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            window.location.href = "./msc-13.html";
+        }
+        document.getElementById("option-2").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "You turn, enter a maze of offices, and find yourself back at the entrance of the SPO. Please try again.";
+            document.getElementById("option-2").style.textDecoration = "line-through";
+        }
+        document.getElementById("option-3").onclick = function() {
+            window.location.href = "./msc-10.html";
+        }
+    </script>
+</body>
+</html>

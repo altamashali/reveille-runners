@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/rudder/9.JPG">
+    <p id="dialogue-box">The Aggie is taking the elevator upstairs. What do you do?</p>
+    <div id="options">
+        <button id="option-1" type="button">Follow the aggie to the level they are going</button>    
+        <button id="option-2" type="button">Go to the roof</button>    
+        <button id="option-3" type="button">Stay in the lobby and stare at the window</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "There is a recruiting event on that floor. A group of aggies in masks start petting you and you don't find the ring. Start over.";
+            document.getElementById("option-1").style.textDecoration = "line-through";
+            setTimeout(() => { window.location.href = "./rudder-1.html"; }, 4000);
+        }
+        document.getElementById("option-2").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "You get lost on the roof and do not find the ring. Start over.";
+            document.getElementById("option-2").style.textDecoration = "line-through";
+            setTimeout(() => { window.location.href = "./rudder-1.html"; }, 4000);
+        }
+        document.getElementById("option-3").onclick = function() {
+            window.location.href = "./rudder-10.html";
+        }
+    </script>
+</body>
+</html>

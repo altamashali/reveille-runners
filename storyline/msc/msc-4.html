@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/msc/4.JPG">
+    <p id="dialogue-box">Weee! You jump in the fountain, then find that moving through the water has sapped a lot of your energy. You're feeling calm now.</p>
+    <div id="options">
+        <button id="option-1" type="button">Head to the MSC.</button>    
+        <button id="option-2" type="button">This is fun! Head to Fish Pond.</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            window.location.href = "./msc-6.html";
+        }
+        document.getElementById("option-2").onclick = function() {
+            window.location.href = "./msc-5.html";
+        }
+    </script>
+</body>
+</html>

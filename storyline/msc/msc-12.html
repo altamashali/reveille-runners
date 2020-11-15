@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/msc/12.JPG">
+    <p id="dialogue-box">You continue past the SPO but find that the other hallways are all dark.</p>
+    <div id="options">
+        <button id="option-1" type="button">Go back and enter the SPO.</button>    
+        <button id="option-2" type="button">Proceed through the darkness.</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            window.location.href = "./msc-11.html";
+        }
+        document.getElementById("option-2").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "Beware. You may have already taken this path before. Please try again.";
+            document.getElementById("option-2").style.textDecoration = "line-through";
+        }
+    </script>
+</body>
+</html>

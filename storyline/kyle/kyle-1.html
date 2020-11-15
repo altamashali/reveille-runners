@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/kyle/1.JPG">
+    <p id="dialogue-box">You're looking at Kyle Field from Wellborn road, Which entrance do you use to get in the stadium?</p>
+    <div id="options">
+        <button id="option-1" type="button">Go left through the Northwest tower.</button>    
+        <button id="option-2" type="button">Go right through the Southwest tower.</button>    
+        <button id="option-3" type="button">Walk around to the Southest tower.</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            window.location.href = "./kyle-2.html";
+        }
+        document.getElementById("option-2").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "Oh no! The Southwest tower is closed. Looks like you need to try another entrance. Please try again.";
+            document.getElementById("option-2").style.textDecoration = "line-through";
+        }
+        document.getElementById("option-3").onclick = function() {
+            window.location.href = "./kyle-3.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/kyle/10.JPG">
+    <p id="dialogue-box">Now that you're at the top you see a sign about the Hall of Campions.</p>
+    <div id="options">
+        <button id="option-1" type="button">That looks cool, lets go!</button>    
+        <button id="option-2" type="button">I think I'll pass.</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            window.location.href = "./kyle-6.html";
+        }
+        document.getElementById("option-2").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "You look around the third deck instead but theres no sign of any rings. Please restart.";
+            document.getElementById("option-2").style.textDecoration = "line-through";
+            setTimeout(() => {  window.location.href = "./kyle-4.html"; }, 4000);
+        }
+    </script>
+</body>
+</html>

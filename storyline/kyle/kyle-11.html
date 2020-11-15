@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/kyle/11.JPG">
+    <p id="dialogue-box">#2 is Johnny Manziel's number! Now that you're at the jersey what do you do?</p>
+    <div id="options">
+        <button id="option-1" type="button">Read about Johnny Manziel.</button>    
+        <button id="option-2" type="button">Sniff around for anything else.</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "Manziel became the first-ever freshman and the second Aggie to win the prestigious Heisman Trophy, college football’s top individual honor, by more than 150 first-place votes after a record-setting season.";
+            document.getElementById("option-1").style.textDecoration = "line-through";
+        }
+        document.getElementById("option-2").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "You have found Johnny Manziel's Aggie ring! Congratulations!";
+            document.getElementById("dialogue-box").style.backgroundColor = "yellow";
+            document.getElementById("dialogue-box").style.color = "black";
+
+            setTimeout(() => {  window.location.href = "../finish-1.html"; }, 4000);
+        }
+    </script>
+</body>
+</html>

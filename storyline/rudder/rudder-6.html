@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/rudder/6.JPG">
+    <p id="dialogue-box">You have successfully made it accross the street fowards Rudder Tower. What do you do?</p>
+    <div id="options">
+        <button id="option-1" type="button">Follow the aggie into the Rudder Tower</button>    
+        <button id="option-2" type="button">Go accross, towards the pond</button>    
+        <button id="option-3" type="button">Follow another Aggie to MSC</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            window.location.href = "./rudder-9.html";
+        }
+        document.getElementById("option-2").onclick = function() {
+            window.location.href = "./rudder-10.html";
+        }
+        document.getElementById("option-3").onclick = function() {
+            window.location.href = "./rudder-8.html";
+        }
+    </script>
+</body>
+</html>

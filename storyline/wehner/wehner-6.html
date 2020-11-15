@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/wehner/6.JPG">
+    <p id="dialogue-box">You make a pit stop at the Small Animal Hospital. You encounter several different animals who want to aid you on your journey. What do you do?</p>
+    <div id="options">
+        <button id="option-1" type="button">Reject their offer and quickly get back on track.</button>    
+        <button id="option-2" type="button">Accept their offer becuase they seem like a nice group of animals.</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            window.location.href = "./wehner-5.html";
+        }
+        document.getElementById("option-2").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "It turns out the animals only offered to help so that they could escape the hospital. They have left you stranded. Please restart.";
+            document.getElementById("option-2").style.textDecoration = "line-through";
+            setTimeout(() => {  window.location.href = "./wehner-1.html"; }, 4000);
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/wehner/4.JPG">
+    <p id="dialogue-box">You need to decide on a counteroffer for the bird. What do you offer?</p>
+    <div id="options">
+        <button id="option-1" type="button">You offer half of the biscuits now and the rest upon arrival.</button>    
+        <button id="option-2" type="button">You only offer the biscuits upon arrival at the expense of making pittstops.</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            window.location.href = "./wehner-5.html";
+        }
+        document.getElementById("option-2").onclick = function() {
+            window.location.href = "./wehner-6.html";
+        }
+    </script>
+</body>
+</html>

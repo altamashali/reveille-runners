@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/rudder/4.JPG">
+    <p id="dialogue-box"> The squirrel has passed by, but you see that the Aggie has already made it accross the street. There is a bus crossing by on the street. What do you do?</p>
+    <div id="options">
+        <button id="option-1" type="button">Make a left turn</button>    
+        <button id="option-2" type="button">Cross at the crosswalk where the bus stops</button>    
+        <button id="option-3" type="button">Try to run accross before the bus comes closer</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            window.location.href = "./rudder-5.html";
+        }
+        document.getElementById("option-2").onclick = function() {
+            window.location.href = "./rudder-6.html";
+        }
+        document.getElementById("option-3").onclick = function() {
+            window.location.href = "./rudder-7.html";
+        }
+    </script>
+</body>
+</html>

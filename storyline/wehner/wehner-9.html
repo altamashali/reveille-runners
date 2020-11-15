@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/wehner/9.JPG">
+    <p id="dialogue-box">You have found a key. What do you do?</p>
+    <div id="options">
+        <button id="option-1" type="button">Make your way to the back of Wehner.</button>    
+        <button id="option-2" type="button">Continue analyzing portraits.</button>    
+        <button id="option-3" type="button">Make your way to the roof.</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            window.location.href = "./wehner-10.html";
+        }
+        document.getElementById("option-2").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "It seems that you're only wasting time now. Please try again.";
+            document.getElementById("option-2").style.textDecoration = "line-through";
+
+        }
+        document.getElementById("option-3").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "You're only escaping futher from the goal. Reconsider your decision.";
+            document.getElementById("option-3").style.textDecoration = "line-through";
+        }
+    </script>
+</body>
+</html>

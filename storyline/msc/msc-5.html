@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/msc/5.JPG">
+    <p id="dialogue-box">On the way to Fish Pond, you encounter construction that blocks your way.</p>
+    <div id="options">
+        <button id="option-1" type="button">Turn around and head back to the MSC.</button>    
+        <button id="option-2" type="button">Turn left.</button>    
+        <button id="option-3" type="button">Turn right.</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            window.location.href = "./msc-6.html";
+        }
+        document.getElementById("option-2").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "You turn, walk between some fences,  turn left, turn right, and before you know it, you're completely lost. Please restart.";
+            document.getElementById("option-2").style.textDecoration = "line-through";
+            setTimeout(() => {  window.location.href = "./msc-1.html"; }, 4000);
+        }
+        document.getElementById("option-3").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "You turn, walk between some fences,  turn left, turn right, and before you know it, you're completely lost. Please restart.";
+            document.getElementById("option-3").style.textDecoration = "line-through";
+            setTimeout(() => {  window.location.href = "./msc-1.html"; }, 4000);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/kyle/9.JPG">
+    <p id="dialogue-box">There's so many jersey's over here! I wonder which one is Johnny Manziel's?</p>
+    <div id="options">
+        <button id="option-1" type="button">#2</button>    
+        <button id="option-2" type="button">#12</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            window.location.href = "./kyle-11.html";
+        }
+        document.getElementById("option-2").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "12 is the number of the 12th man, not Manziel. Pick again!";
+            document.getElementById("option-2").style.textDecoration = "line-through";
+        }
+    </script>
+</body>
+</html>

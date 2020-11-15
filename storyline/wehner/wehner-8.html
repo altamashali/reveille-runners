@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/wehner/8.JPG">
+    <p id="dialogue-box">You have arrived to an isolated area behind Wehner. You see several places where the ring may be. What do you do?</p>
+    <div id="options">
+        <button id="option-1" type="button">Retrieve a locked box from the dumpster.</button>    
+        <button id="option-2" type="button">Check inside the flower pots lined along the wall.</button>    
+        <button id="option-3" type="button">Check underneath the back-door mat.</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "Unfortunately, you don't have anything to open the box with. Please try again.";
+            document.getElementById("option-1").style.textDecoration = "line-through";
+            setTimeout(() => {  window.location.href = "./wehner-5.html"; }, 4000);
+        }
+        document.getElementById("option-2").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "Sorry. Your best find was a pile of dirt. Please try again.";
+            document.getElementById("option-2").style.textDecoration = "line-through";
+
+        }
+        document.getElementById("option-3").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "It seems that you were either too late or you never should have been here to begin with. Please try again.";
+            document.getElementById("option-3").style.textDecoration = "line-through";
+        }
+    </script>
+</body>
+</html>

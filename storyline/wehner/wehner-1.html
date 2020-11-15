@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style-story.css">
+</head>
+<body>
+    <img src="../../images/wehner/1.JPG">
+    <p id="dialogue-box">You are currently en route to West Campus. You see a speeding train approaching. What do you do?</p>
+    <div id="options">
+        <button id="option-1" type="button">Wait for the train to cross.</button>    
+        <button id="option-2" type="button">Leap over the roaring train.</button>    
+        <button id="option-3" type="button">Seek guidance from a nearby bird.</button>    
+    </div>
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            window.location.href = "./wehner-2.html";
+        }
+        document.getElementById("option-2").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "Your leap was great, but not enough. You were wiped out. Please try again.";
+            document.getElementById("option-2").style.textDecoration = "line-through";
+            setTimeout(() => {  window.location.href = "./wehner-1.html"; }, 4000);
+
+        }
+        document.getElementById("option-3").onclick = function() {
+            window.location.href = "./wehner-3.html";
+        }
+    </script>
+</body>
+</html>
