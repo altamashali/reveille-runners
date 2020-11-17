@@ -1,0 +1,51 @@
+@font-face  {
+    font-family: Goldman;
+    src: url("./fonts/Goldman-Regular.ttf");
+    font-weight: 400;
+}
+/* @font-face  {
+    font-family: Goldman;
+    src: url("./fonts/Goldman-Bold.ttf");
+    font-weight: 700;
+} */
+body{
+    margin-top: 50px;
+    font-family: Goldman;
+    background-image: url(./images/main-blur.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-attachment: fixed;
+    color: white;
+}
+h1{
+    text-align: center;
+    margin-bottom: 0px;
+}
+h2{
+    margin-top: 0px;
+    text-align: center;
+}
+#options{
+
+}
+p{
+    font-size: larger;
+    background-color: rgb(0, 0, 0, .8);
+    padding: 10px;
+    max-width: fit-content;
+    border-radius: 10px;}
+button{
+    background-color: rgb(128, 0, 0, .8);
+    font-family: Goldman;
+    font-size: larger;
+    color: white;
+    padding: 5px;
+    width: 15%;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+
+
+}

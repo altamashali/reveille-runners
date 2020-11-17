@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <h1>Reveille Runners</h1>
+    <h2>The Plan to Save Aggieland</h2>
+    <img style="width: 500px;" src="./images/main.jpg">
+    <p id="dialogue-box">The pandemic has driven students off of campus. Reveille believes that the only way to bring them back is to collect the lost rings of four famous Aggies. The rings are scattered around campus. 
+    </p>
+    <p id="dialogue-box">Are you ready begin your quest to save Aggieland?</p>
+
+    <div id="options">
+        <button id="option-1">Yes</button>    
+        <button id="option-2">No</button>    
+    </div>
+
+    <script>
+        document.getElementById("option-1").onclick = function() {
+            window.location.href = "./storyline/wehner/start-1.html";
+        }
+        document.getElementById("option-2").onclick = function() {
+            document.getElementById("dialogue-box").innerHTML = "You came here for an adventure didn't you? Try again.";
+            document.getElementById("option-2").style.textDecoration = "line-through";
+
+        }
+    </script>
+    
+</body>
+</html>
