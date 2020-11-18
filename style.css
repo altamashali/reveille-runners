@@ -9,7 +9,7 @@
     font-weight: 700;
 } */
 body{
-    margin-top: 50px;
+    margin-top: 100px;
     font-family: Goldman;
     background-image: url(./images/main-blur.jpg);
     background-position: center;
@@ -42,7 +42,7 @@ img{
     text-align: center;
 }
 #options{
-    width: 75%;
+    width: 5%;
     margin-left: auto;
     margin-right: auto;
 }

@@ -7,15 +7,21 @@
     <link rel="stylesheet" href="./style-story.css">
 
 </head>
-<body style="margin-top: 70px;">
+<body style="margin-top: 150px;">
     <h1>Reveille Runners</h1>
     <h2>The Plan to Save Aggieland</h2>
 
-    <p id="dialogue-box-1">The pandemic has driven students off of campus.</p>
+    <p id="dialogue-box-1">It is the year 2020.</p>
     <p id="dialogue-box-2"></p>
     <p id="dialogue-box-3"></p>
+    <p id="dialogue-box-4"></p>
+    <p id="dialogue-box-5"></p>
+    <p id="dialogue-box-6"></p>
+    <p id="dialogue-box-7"></p>
 
-    <div id="options">
+
+
+    <div style="width: 10%;" id="options">
         <button id="option-1" onclick="nextLine()">Read More</button>
     </div>
 
@@ -25,14 +31,41 @@
         box2.style.display = 'none';
         var box3 = document.getElementById('dialogue-box-3');
         box3.style.display = 'none';
+        var box4 = document.getElementById('dialogue-box-4');
+        box4.style.display = 'none';
+        var box5 = document.getElementById('dialogue-box-5');
+        box5.style.display = 'none';
+        var box6 = document.getElementById('dialogue-box-6');
+        box6.style.display = 'none';
+        var box7 = document.getElementById('dialogue-box-7');
+        box7.style.display = 'none';
+
         function nextLine() {
           if (numClicks == 0) {
-            document.getElementById("dialogue-box-2").innerHTML = "Reveille believes that the only way to bring them back is to collect the lost rings of four famous Aggies.";
+            document.getElementById("dialogue-box-2").innerHTML = "A pandemic has left the campus a barren wasteland.";
             box2.style.display = 'block';
-          } else if (numClicks == 1) {
-            document.getElementById("dialogue-box-3").innerHTML = "The rings are scattered around campus.";
+          } 
+          else if (numClicks == 1) {
+            document.getElementById("dialogue-box-3").innerHTML = "The sight of an Aggie is quite rare nowadays.";
             box3.style.display = 'block';
-          } else {
+          } 
+          else if (numClicks == 2) {
+            document.getElementById("dialogue-box-4").innerHTML = "Reveille believes she has the power to make campus flourish again.";
+            box4.style.display = 'block';
+          } 
+          else if (numClicks == 3) {
+            document.getElementById("dialogue-box-5").innerHTML = "To do so, she must uncover the lost Aggie rings of famous alumni.";
+            box5.style.display = 'block';
+          } 
+          else if (numClicks == 4) {
+            document.getElementById("dialogue-box-6").innerHTML = "These rings are scattered across campus.";
+            box6.style.display = 'block';
+          } 
+          else if (numClicks == 5) {
+            document.getElementById("dialogue-box-7").innerHTML = "You must overcome any obstacles in order to find them.";
+            box7.style.display = 'block';
+          } 
+          else{
             window.location.href = "./storyline/wehner/start-1.html";
           }
           numClicks +=1;

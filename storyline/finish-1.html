@@ -5,21 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style-story.css">
+
 </head>
-<body>
-    <img src="../images/main.jpg">
-    <p id="dialogue-box">Congratulations you have found all of the rings! Play again?</p>
-    <div id="options">
-        <button id="option-1" type="button">Yes</button>    
-        <button id="option-2" type="button">No</button>    
+<body style="margin-top: 150px;">
+    <h1>Reveille Runners</h1>
+    <h2>The Plan to Save Aggieland</h2>
+
+    <p id="dialogue-box-1">You have finally discovered the four lost Aggie Rings.</p>
+    <p id="dialogue-box-2"></p>
+    <p id="dialogue-box-3"></p>
+    <p id="dialogue-box-4"></p>
+    <p id="dialogue-box-5"></p>
+    <p id="dialogue-box-6"></p>
+    <p id="dialogue-box-7"></p>
+    <p id="dialogue-box-8"></p>
+
+    <div style="width: 10%;" id="options">
+        <button id="option-1" onclick="nextLine()">Read More</button>
     </div>
+
     <script>
-        document.getElementById("option-1").onclick = function() {
-            window.location.href = "./wehner/start-1.html";
+        var numClicks = 0;
+        var box2 = document.getElementById('dialogue-box-2');
+        box2.style.display = 'none';
+        var box3 = document.getElementById('dialogue-box-3');
+        box3.style.display = 'none';
+        var box4 = document.getElementById('dialogue-box-4');
+        box4.style.display = 'none';
+        var box5 = document.getElementById('dialogue-box-5');
+        box5.style.display = 'none';
+        var box6 = document.getElementById('dialogue-box-6');
+        box6.style.display = 'none';
+        var box7 = document.getElementById('dialogue-box-7');
+        box7.style.display = 'none';
+        var box8 = document.getElementById('dialogue-box-8');
+        box8.style.display = 'none';
+
+        function nextLine() {
+          if (numClicks == 0) {
+            document.getElementById("dialogue-box-2").innerHTML = "In your possession, you now hold the Aggie rings of:";
+            box2.style.display = 'block';
+          } 
+          else if (numClicks == 1) {
+            document.getElementById("dialogue-box-3").innerHTML = "Britt Harris, former CEO of the largest hedge fund in America";
+            box3.style.display = 'block';
+          } 
+          else if (numClicks == 2) {
+            document.getElementById("dialogue-box-4").innerHTML = "James Earl Rudder, a former United States Army Major General";
+            box4.style.display = 'block';
+          } 
+          else if (numClicks == 3) {
+            document.getElementById("dialogue-box-5").innerHTML = "Charles E. Toberman, A.K.A. 'Mr. Hollywood'";
+            box5.style.display = 'block';
+          } 
+          else if (numClicks == 4) {
+            document.getElementById("dialogue-box-6").innerHTML = "and Johnny Manziel, former Heisman winner and Aggie football legend";
+            box6.style.display = 'block';
+          } 
+          else if (numClicks == 5) {
+            document.getElementById("dialogue-box-7").innerHTML = "The power of these legendary individuals has restored the Aggie spirit.";
+            box7.style.display = 'block';
+          } 
+          else if (numClicks == 6) {
+            document.getElementById("dialogue-box-8").innerHTML = "The Aggies family has finally been resummoned and have reunited on campus.";
+            box8.style.display = 'block';
+          } 
+          else{
+            window.location.href = "./finish-2.html";
+          }
+          numClicks +=1;
         }
-        document.getElementById("option-2").onclick = function() {
-            document.getElementById("dialogue-box").innerHTML = "Thanks for playing!";
-        }
+
     </script>
+
 </body>
 </html>
