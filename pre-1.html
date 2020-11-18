@@ -4,26 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style-pre.css">
+    <link rel="stylesheet" href="./style-story.css">
 
 </head>
-<body>
+<body style="margin-top: 70px;">
     <h1>Reveille Runners</h1>
     <h2>The Plan to Save Aggieland</h2>
-    
+
     <p id="dialogue-box-1">The pandemic has driven students off of campus.</p>
-    <p id="dialogue-box-2">Reveille believes that the only way to bring them back is to collect the lost rings of four famous Aggies.</p>
-    <p id="dialogue-box-3">The rings are scattered around campus.</p>
+    <p id="dialogue-box-2"></p>
+    <p id="dialogue-box-3"></p>
 
     <div id="options">
-        <button id="option-1">Read More</button>    
+        <button id="option-1" onclick="nextLine()">Read More</button>
     </div>
 
     <script>
-        
-        var x;
+        var numClicks = 0;
+        var box2 = document.getElementById('dialogue-box-2');
+        box2.style.display = 'none';
+        var box3 = document.getElementById('dialogue-box-3');
+        box3.style.display = 'none';
+        function nextLine() {
+          if (numClicks == 0) {
+            document.getElementById("dialogue-box-2").innerHTML = "Reveille believes that the only way to bring them back is to collect the lost rings of four famous Aggies.";
+            box2.style.display = 'block';
+          } else if (numClicks == 1) {
+            document.getElementById("dialogue-box-3").innerHTML = "The rings are scattered around campus.";
+            box3.style.display = 'block';
+          } else {
+            window.location.href = "./storyline/wehner/start-1.html";
+          }
+          numClicks +=1;
+        }
 
     </script>
-    
+
 </body>
 </html>

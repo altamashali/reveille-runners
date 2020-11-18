@@ -10,12 +10,12 @@
     <img src="../../images/kyle/7.JPG">
     <p id="dialogue-box">As you're walking towards the first deck you see a group of bats, what should you do?</p>
     <div id="options">
-        <button id="option-1" type="button">Touch the bats! I'm sure they're friendly.</button>    
+        <button id="option-1" type="button">Touch the bats! I'm sure they're friendly.</button>
         <button id="option-2" type="button">I think it's best to avoid them!</button>    
     </div>
     <script>
         document.getElementById("option-1").onclick = function() {
-            document.getElementById("dialogue-box").innerHTML = "Oh no! The bats are coming after you! You're able to use the towel you got earlier to protect yourself from the bats, but it might be best to go somewhere else.";
+            document.getElementById("dialogue-box").innerHTML = "Oh no! The bats are coming after you! It might be best to go somewhere else.";
             document.getElementById("option-1").style.textDecoration = "line-through";
             setTimeout(() => {  window.location.href = "./kyle-4.html"; }, 4000);
         }
